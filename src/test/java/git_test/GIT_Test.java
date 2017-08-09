@@ -18,7 +18,8 @@ public class GIT_Test {
 		WebDriver wd = new FirefoxDriver();
 		wd.get("https://www.google.co.in/");
 		File src = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\Users\\Nandhini\\Selenium_Workspace\\git-test\\Screenshot"));
+		FileUtils.copyFile(src, new File("C:\\Users\\Nandhini\\Selenium_Workspace\\git-test\\Screenshot\\Google_Image.jpg"));
+		wd.quit();
 	}
 
 }
